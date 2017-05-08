@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExerciseAppMay.Exercise">
+<!--
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#4388CC" Margin="10,30,10,20" Padding="10"
+                     VerticalOptions="Start">
+            <BoxView BackgroundColor="Blue">
+            </BoxView>
+            <Entry Text="I am an entry">
+
+            </Entry>
+            <DatePicker>
+
+            </DatePicker>
+            <Editor Text="I am an editor">
+
+            </Editor>
+        </StackLayout>
+    </ContentPage.Content>
+-->
+
+<!--
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid 
+              Grid.Column="0"
+              BackgroundColor ="#4388CC"/>
+        <Grid 
+              Grid.Column="1"
+              BackgroundColor ="Red"/>
+    </Grid>
+-->
+
+    <Grid BackgroundColor="#4388CC">
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition  Height="Auto" />
+            <RowDefinition  Height="Auto" />
+            <RowDefinition  Height="Auto" />
+            <RowDefinition  Height="Auto" />
+            <RowDefinition  Height="Auto" />
+            
+            <RowDefinition  Height="Auto" />
+
+            <!-- <RowDefinition Height="100" /> -->
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="Auto" />
+
+            <ColumnDefinition Width="*" />
+
+            <!--  <ColumnDefinition Width="100" />  -->
+
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Exercise Buddy!" Rotation="-2" FontSize="Large"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"  TextColor="White" BackgroundColor="#4388CC" Margin="10,15,5,5"/>
+        <Entry Text="Exercise Name" TextColor="White" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"   BackgroundColor="#4388CC" Margin="15,30,5,15"/>
+        <Label Text="Intensity"  FontSize="15" FontAttributes="Bold"   TextColor="White" Grid.Row="2" Grid.Column="0" VerticalTextAlignment="Center" Margin="25,30,5,15"/>
+        <Picker x:Name="IntensityPicker" SelectedIndexChanged="IntensityPicker_OnSelectedIndexChanged"  TextColor="White" Grid.Row="2" Grid.Column="1" Margin="80,15,95,5" />
+        <Label Text="Duration"  FontSize="15" FontAttributes="Bold"   TextColor="White" Grid.Row="3" Grid.Column="0" VerticalTextAlignment="Center" Margin="25,30,5,15"/>
+        <Picker x:Name="DurationPicker" SelectedIndexChanged="DurationPicker_OnSelectedIndexChanged" TextColor="White" Grid.Row="3" Grid.Column="1" Margin="80,15,85,5"/>
+        <Entry Text="Short Description" TextColor="White" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"   BackgroundColor="#4388CC" Margin="15,30,5,15"/>
+        <Button Text="Add Exercise" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"  HorizontalOptions="Center" WidthRequest="300" BackgroundColor="Gray" TextColor="White"/>
+
+
+
+
+        <!-- <Label Text="Xamarin Forms Grid Demo" TextColor="Yellow" BackgroundColor="Black" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" /> -->
+
+        <!-- <Label Text="Xamarin Forms" TextColor="Blue" BackgroundColor="Yellow" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" /> -->
+
+        <!-- <Label Text="C Sharp Corner" FontSize="Large" Grid.Row="1" Grid.Column="1" TextColor="Yellow" BackgroundColor="Red" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" /> -->
+
+       <!-- <Label Text="Xamarin Forms" Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" TextColor="Blue" BackgroundColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" /> -->
+
+       <!-- <Label Text="Cross Platform Development" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" TextColor="Blue" BackgroundColor="Yellow" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" /> -->
+
+        <!-- <Label Text="UWP Android Apple" Grid.Row="2" Grid.Column="2" TextColor="Red" BackgroundColor="Aqua" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" /> -->
+
+    </Grid>
+
+</ContentPage>
