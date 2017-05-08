@@ -3,8 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ExerciseAppMay"
              x:Class="ExerciseAppMay.MainPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Button Text="Go Exercise" Clicked="GoExerciseButton_Clicked"  WidthRequest="300" BackgroundColor="Gray" TextColor="White"/>
+            <Button Text="Go Music List" Clicked="GoMusicListButton_Clicked"  WidthRequest="300" BackgroundColor="Gray" TextColor="White"/>
+            <Button Text="Go Voice TTS" Clicked="GoTTSButton_Clicked"  WidthRequest="300" BackgroundColor="Gray" TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
 
-    <Button Text="Go Exercise"  HorizontalOptions="Center" WidthRequest="300" BackgroundColor="Gray" TextColor="White"/>
-    <Button Text="Go Music List"  HorizontalOptions="Center" WidthRequest="300" BackgroundColor="Gray" TextColor="White"/>
 
 </ContentPage>

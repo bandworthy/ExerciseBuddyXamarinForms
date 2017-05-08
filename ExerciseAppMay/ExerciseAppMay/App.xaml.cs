@@ -15,7 +15,9 @@ namespace ExerciseAppMay
 
             //MainPage = new ExerciseAppMay.MainPage();
             //MainPage = new Exercise();
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            //MainPage = new MusicList();
+            MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()

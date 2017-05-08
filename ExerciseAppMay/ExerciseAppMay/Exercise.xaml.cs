@@ -47,6 +47,13 @@ namespace ExerciseAppMay
             DisplayAlert(name, "Selected value", "OK");
 #endif
         }
+        private void CancelExerciseCreateButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.RemovePage(this);
+            //Navigation.PushAsync(new MusicList());
+            //Navigation.RemovePage(this);
+        }
+        
 
     }
 }

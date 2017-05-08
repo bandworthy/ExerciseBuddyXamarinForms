@@ -13,5 +13,21 @@ namespace ExerciseAppMay
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void GoExerciseButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Exercise());
+           // Navigation.RemovePage(this);
+        }
+        private void GoMusicListButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MusicList());
+            //Navigation.RemovePage(this);
+        }
+        private void GoTTSButton_Clicked(object sender, EventArgs e)
+        {
+            //Navigation.PushAsync(new MusicList());
+            //Navigation.RemovePage(this);
+        }
+    }
 }
