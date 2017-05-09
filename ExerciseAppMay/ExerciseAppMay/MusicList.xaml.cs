@@ -8,6 +8,10 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 using System.IO;
+#if __ANDROID__
+using Android.Media;
+using ExerciseAppMay.Droid;
+#endif
 
 
 namespace ExerciseAppMay
@@ -16,7 +20,9 @@ namespace ExerciseAppMay
 	public partial class MusicList : ContentPage
 	{
 
-
+#if __ANDROID__
+        protected MediaPlayer player = new MediaPlayer();
+#endif
 
         public MusicList ()
 		{
@@ -61,5 +67,36 @@ namespace ExerciseAppMay
             }
 
         }
-	}
+        // When item in list selected, get its string name.
+        private void OnItemSelected_List(object sender, SelectedItemChangedEventArgs e)
+        {
+            var item = e.SelectedItem;
+            //DisplayAlert(item.ToString(), "Selected value", "OK");
+#if __ANDROID__
+            StartPlayer("/storage/emulated/0/Music/"+item.ToString()+".mp3");
+            var customStringXamarinWay = Android.App.Application.Context;
+            Class1 p = new Class1();
+            p.testmethod(customStringXamarinWay);
+#endif
+
+        }
+
+        //basic play selected song
+        public void StartPlayer(String filePath)
+        {
+#if __ANDROID__
+            if (player == null)
+            {
+                player = new MediaPlayer();
+            }
+            else
+            {
+                player.Reset();
+                player.SetDataSource(filePath);
+                player.Prepare();
+                player.Start();
+            }
+#endif
+        }
+    }
 }

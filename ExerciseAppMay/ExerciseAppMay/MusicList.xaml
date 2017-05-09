@@ -4,5 +4,5 @@
              x:Class="ExerciseAppMay.MusicList"
              Title="Music List">
 
-    <ListView x:Name="MusicListView" />
+    <ListView x:Name="MusicListView" ItemSelected="OnItemSelected_List"/>
 </ContentPage>
