@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace ExerciseAppMay.Droid
 {
-    class Class1
+    class GeneralController
     {
         
 
@@ -21,6 +21,7 @@ namespace ExerciseAppMay.Droid
         {
             Toast.MakeText(cont, "No Music Folder", ToastLength.Long).Show();
         }
-
+        
+        
     }
 }

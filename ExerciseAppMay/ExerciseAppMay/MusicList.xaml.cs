@@ -75,7 +75,7 @@ namespace ExerciseAppMay
 #if __ANDROID__
             StartPlayer("/storage/emulated/0/Music/"+item.ToString()+".mp3");
             var customStringXamarinWay = Android.App.Application.Context;
-            Class1 p = new Class1();
+            GeneralController p = new GeneralController();
             p.testmethod(customStringXamarinWay);
 #endif
 
