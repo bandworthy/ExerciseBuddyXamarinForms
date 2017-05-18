@@ -46,7 +46,8 @@
             <RowDefinition  Height="Auto" />
             <RowDefinition  Height="Auto" />
             <RowDefinition  Height="Auto" />
-            
+
+            <RowDefinition  Height="Auto" />
             <RowDefinition  Height="Auto" />
             <RowDefinition  Height="Auto" />
 
@@ -70,9 +71,11 @@
         <Picker x:Name="IntensityPicker" SelectedIndexChanged="IntensityPicker_OnSelectedIndexChanged"  TextColor="White" Grid.Row="2" Grid.Column="1" Margin="80,15,95,5" />
         <Label Text="Duration"  FontSize="15" FontAttributes="Bold"   TextColor="White" Grid.Row="3" Grid.Column="0" VerticalTextAlignment="Center" Margin="25,30,5,15"/>
         <Picker x:Name="DurationPicker" SelectedIndexChanged="DurationPicker_OnSelectedIndexChanged" TextColor="White" Grid.Row="3" Grid.Column="1" Margin="80,15,85,5"/>
-        <Entry Text="Short Description" TextColor="White" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"   BackgroundColor="#4388CC" Margin="15,30,5,15"/>
-        <Button Text="Add Exercise" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="Gray" TextColor="White"/>
-        <Button Text="Cancel" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Clicked="CancelExerciseCreateButton_Clicked" BackgroundColor="Gray" TextColor="White"/> 
+        <Label Text="Accessory" FontSize="15" FontAttributes="Bold"   TextColor="White" Grid.Row="4" Grid.Column="0"  VerticalTextAlignment="Center" Margin="25,30,5,15"/>
+        <Picker x:Name="AccessoryPicker" SelectedIndexChanged="AccessoryPicker_OnSelectedIndexChanged" TextColor="White" Grid.Row="4" Grid.Column="1" Margin="80,15,85,5"/>
+        <Entry Text="Short Description" TextColor="White" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"   BackgroundColor="#4388CC" Margin="15,30,5,15"/>
+        <Button Text="Add Exercise" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="Gray" TextColor="White"/>
+        <Button Text="Cancel" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Clicked="CancelExerciseCreateButton_Clicked" BackgroundColor="Gray" TextColor="White"/> 
        
 
 

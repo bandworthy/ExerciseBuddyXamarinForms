@@ -30,30 +30,25 @@ namespace ExerciseAppMay
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
             };
             speak.Clicked += (sender, e) => {
-                DependencyService.Get<ITextToSpeech>().Speak(test1);
+                //DependencyService.Get<ITextToSpeech>().Speak(test1);
+                sayIt(test1);
             };
             Content = speak;
+
+ 
         }
-        
+
+        public void sayIt(string s)
+        {
+            DependencyService.Get<ITextToSpeech>().Speak(s);
+        }
+
 
         private void TTS_Button_OnClicked(object sender, EventArgs e)
         {
-//            var text = MainEntry.Text;
-//#if __ANDROID__
-//            sendTextAndroid("Hello World I will destroy you");
-//#endif
 
         }
-        /*
-        private void sendTextAndroid(string s)
-        {
-#if __ANDROID__
-            TextToSpeechController ttsC = new TextToSpeechController();
-            ttsC.callTextToSpeech(Android.App.Application.Context,s);
-#endif
-        }
 
-    */
 
     }
 }
