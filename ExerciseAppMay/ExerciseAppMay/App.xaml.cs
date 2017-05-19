@@ -20,6 +20,9 @@ namespace ExerciseAppMay
             MainPage = new NavigationPage(new MainPage());
 		}
 
+        //ADDED for DATABASE
+
+
 		protected override void OnStart ()
 		{
 			// Handle when your app starts
