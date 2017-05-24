@@ -1,14 +1,23 @@
-﻿//using System;
+﻿using System;
+using SQLite.Net;
+using Xamarin.Forms;
 using System.Collections.Generic;
-//using System.Text;
-using SQLite;
-using System.Threading.Tasks;
+using System.Linq;
+using ExerciseAppMay.Data;
 
 namespace ExerciseAppMay
 {
     //this file is randomthoughtdatabase
-    class ExerciseAppDatabase
+    public class ExerciseAppDatabase
     {
+        private SQLiteConnection _connection;
+
+        public ExerciseAppDatabase()
+        {
+            _connection = DependencyService.Get<ISQLite>().GetConnection();
+            _connection.CreateTable<ExerciseItem>();
+        }
+
         /*
         readonly SQLiteAsyncConnection database;
 

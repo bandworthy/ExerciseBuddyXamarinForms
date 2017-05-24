@@ -4,6 +4,9 @@ using System.Text;
 
 using SQLite;
 
+using System;
+using SQLite.Net.Attributes;
+
 namespace ExerciseAppMay.Model
 {
     class RoutineItem

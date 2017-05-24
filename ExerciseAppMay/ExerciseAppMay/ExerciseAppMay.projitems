@@ -13,6 +13,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Data\ExerciseAppDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ISQLite.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Exercise.xaml.cs">
       <DependentUpon>Exercise.xaml</DependentUpon>
       <SubType>Code</SubType>
