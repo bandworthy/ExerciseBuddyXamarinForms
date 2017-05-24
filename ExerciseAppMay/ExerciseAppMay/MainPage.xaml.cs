@@ -9,10 +9,30 @@ namespace ExerciseAppMay
 {
 	public partial class MainPage : ContentPage
 	{
-		public MainPage()
+        //DB
+        //static ExerciseAppDatabase database;
+
+        public MainPage()
 		{
 			InitializeComponent();
 		}
+
+        //ADDED for DATABASE
+        /*
+        public static ExerciseAppDatabase Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new ExerciseAppDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("ExerciseSQLite.db3"));
+                }
+
+                return database;
+            }
+        }
+        */
+
 
         private void GoExerciseButton_Clicked(object sender, EventArgs e)
         {

@@ -12,6 +12,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ExerciseAppDatabase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Exercise.xaml.cs">
       <DependentUpon>Exercise.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -21,6 +22,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ExerciseItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\MusicItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\RoutineItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MusicList.xaml.cs">
       <DependentUpon>MusicList.xaml</DependentUpon>
       <SubType>Code</SubType>

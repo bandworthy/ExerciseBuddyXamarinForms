@@ -9,9 +9,13 @@ namespace ExerciseAppMay
 {
 	public partial class App : Application
 	{
-		public App ()
+        //SQLite
+        static ExerciseAppDatabase database;
+        //
+
+        public App ()
 		{
-			InitializeComponent();
+			//InitializeComponent();
 
             //MainPage = new ExerciseAppMay.MainPage();
             //MainPage = new Exercise();
@@ -21,6 +25,21 @@ namespace ExerciseAppMay
 		}
 
         //ADDED for DATABASE
+        
+        public static ExerciseAppDatabase Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new ExerciseAppDatabase(DependencyService.Get<IFileHelper>().GetLocalFilePath("ExerciseSQLite.db3"));
+                }
+
+                return database;
+            }
+        }
+        
+
 
 
 		protected override void OnStart ()
